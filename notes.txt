@@ -1,0 +1,67 @@
+Multiple Pointers:
+
+create pointers or values that move towards the beginning or the end based on a certain condition. So if we have a linear structure like an array, string, or a linked list we search for a pair of values, or something that meets a condition. 
+
+Sliding Window:
+
+The sliding window pattern involves cerating a "widow" which can either be an array or a number from one position to another. Depending on a certain condition, the window either icnreases or closes (and a new window is created). It is very useful in keeping track of a subset of data in an array or a string.
+
+Divide & Conquer Pattern:
+
+This pattern involves dividing a data set into smaller chunks and then repeating a process with a subset of data. This can TREMENDOUSLY decrease time complexity. Used a lot in sorting algorithms. Take a big chunk of data and divide it into little chunks.
+
+RECURSION
+
+What is recusion? A process that calls itself.
+
+The Call Stack:
+* It's a stack data structure (more leater)
+* Any time a function is invoked it is placed (pushed) on the top of the call stack.
+* When JS sees a return keyword or when the function ends the compiler will remove (pop) it
+
+A design pattern to help with recursion as helper recursions. This can be a helper method recursion where an outer function calls an inner function that's recursive.
+
+SEARCHING ALGORITHMS:
+
+Objectives: Describe what a searching algo is, implement a linear search on arrays, implement binary search on sorted arrays, implement a naive string searcing algorithm. Implement the KMP string searching algorithm.
+
+Linear Search: How do we search?
+
+Given an array, the simplest way is to search through the entire array. 
+
+* indexOf
+* includes
+* find
+* findIndex
+
+These are all examples of linear search. 
+
+Binary Search:
+
+Binary search is much faster 
+Rather than eliminating one element at a time, you can eliminate half of the remaining elements at a time.
+Binary search only works on sorted arrays!
+
+Naive String Search: Searching for substrings
+Suppose you want to count the number of times a smaller string appears in a longer string. 
+
+SORTING ALGOS:
+
+A sorting algo is an algorithm that rearranges items in any collection. 
+
+Why do we need to learn this?
+Incredibly common task, so it's good to know how it works.
+There are many different ways to sort things.
+They commonly come up in interviews.
+
+Objectives:
+1. implement bubble sort
+2. implement selection sort
+3. implement insertion sort
+4. Understand why it's important to learn these simpler sorting algorithms.
+
+Bubble Sort: Slow, places largest objects first.
+
+Selection Sort: Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position.
+
+Inseration Sort: Builds up the sort by gradually creating a larger left half which is always sorted. Ex.
