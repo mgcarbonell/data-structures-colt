@@ -51,7 +51,27 @@ function pivot(arr, start = 0, end = arr.length + 1) {
   }
   swap(arr, start, swapIdx);
   return swapIdx;
+};
+
+// Quicksort Psuedo Code
+/*
+1. Call the pivot helper on the array
+2. When the helper returns the updated pivot index, recursively call the pivot helper on the subarray to the left of the index, and the subarray to the right of the index.
+*/
+
+function quickSort(arr, left = 0, right = arr.length - 1) {
+  // if is our base case 
+  if (left < right) {
+    let pivotIdx = pivot(arr, left, right);
+    // left
+    quickSort(arr, left, pivotIdx - 1);
+    // right
+    quickSort(arr, pivotIdx + 1, right);
+  }
+  // and return something
+  return arr;
 }
 
+const sorted = quickSort([2, 6, 4, 9, 1, -3, 5, 3])
 
-
+console.log(sorted)
