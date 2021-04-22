@@ -65,3 +65,14 @@ Bubble Sort: Slow, places largest objects first.
 Selection Sort: Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position.
 
 Inseration Sort: Builds up the sort by gradually creating a larger left half which is always sorted. Ex.
+
+Merge Sort:
+* Very fast and uses recursion.
+
+
+Quick Sort:
+*Very fast and uses recursions. 
+*Exploits the fact that arrays of 0 or 1 elemtnare always sorted.
+*Works by selecting one element called a pivot and finding the index where the pivot should end up in the sorted array.
+*Once pivot has been positioned appropriately, quick sort can be applied on either side of the pivot.
+Quick Sort.
