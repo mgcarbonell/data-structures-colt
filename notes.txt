@@ -93,3 +93,4 @@ How does it work? We take a list of numbers:
 [1556, 4, 394, 3922, 39, 902, 7, 4398, 923, 29]
 
 We then have a bucket of 0-9, and we look at the first digit from the right side, and then group them together based on that into the buckets. 1556 goes into the 5th bucket, 4 goes into 3, etc. etc. Then we form them into a list again based ontheir bucket, and we repeat but look at the next digit to the left. We keep doing this until they no longer have more than 1 digit and they get put into the 0th bucket, and then sorted from there. 
+

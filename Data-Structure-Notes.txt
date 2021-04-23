@@ -1,0 +1,19 @@
+What do Data Structures do?
+
+Data structures are collections of values, the relationships among them and the functions or operations that can be applied to the data. So we can push pop sort, etc.
+
+Why care?
+
+The more time you spend as a dev, the more likely you'll need one of these. We can't always use arrays, some APIs or Databases will return graphs or graph representation. If you ever worked with the dom: you manipulated a tree. Ohh shiiiiiit. Lastly, interviews, they're always in interviews.
+
+What's the best data structure? There is no best one. They each are the best for different situations. Sad face.
+
+Map/location data, GSP application, etc.. or a code that will route you to the nearest store? Use a graph! shortest lenght, etc. 
+
+What if we needed an ordered list with fast inserts/removals at the beginning and end? Use a linked list! (because we're only adding to the beginning and end)
+
+Scraping nested HTML? Binary trees, the invention of Satan.
+
+Scheduler? Highest priority task? binary heap!
+
+Colt's suggestion: Watch something liked Link Lists and take a break (one hour, two hours, an entire day), come back watch another section and take a brea, etc.
