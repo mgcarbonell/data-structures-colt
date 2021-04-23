@@ -17,3 +17,21 @@ Scraping nested HTML? Binary trees, the invention of Satan.
 Scheduler? Highest priority task? binary heap!
 
 Colt's suggestion: Watch something liked Link Lists and take a break (one hour, two hours, an entire day), come back watch another section and take a brea, etc.
+
+--------------------------------------------------------------------------------
+
+Singly Linked List: 
+
+Obj: Define a singly linked list, compare and contrast linked lists w/ arrays, imp insertion, removal, and traversal methods.
+
+Define: Not an array, an array is contingous in memory (mapped and indexed). A linked list contains a bunch of elements with no indeces pointing to the next element. It's like a train car. A data structure that contains a head, tail, and length property. Linked lists consist of nodes, and each node has a value and a pointer to another node or null. (remember CS50)
+
+Singly Linked List -> each node points to a next node
+
+Doubly Linked List -> each node points to a next node AND back to the previous node.
+
+Comparisons with Arrays:
+
+Lists: Don't have indexes, connected via nodes with a next pointer, ! Random acces is not allowed (we have to traverse all the way from the beginning to whatever place we want)
+
+Arrays: Indexed in order, insertion and deletion can be expensive (if we insert or delete, everything has to be reindexed), can quickly be accessed at a specific index. 
