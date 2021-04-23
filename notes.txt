@@ -76,3 +76,20 @@ Quick Sort:
 *Works by selecting one element called a pivot and finding the index where the pivot should end up in the sorted array.
 *Once pivot has been positioned appropriately, quick sort can be applied on either side of the pivot.
 Quick Sort.
+
+Radix Sort:
+So far we've been talking about comparison sorts. The base comparison is between two items at any given point. Usually less than or greater than. The average time complexities are as follows:
+Bubble - O(n^2)
+Insertion - O(n^2)
+Selection - O(n^2)
+Quick - O(n log(n))
+Merge - O(n log(n))
+
+Do we get anything faster than O(n log(n))? We can sort of, but without comparisons - the fastest we can get with a comparison is O(n log(n)) because there's a mathematical bound. But, we have a way around this and only in certain cases, queue Radix sorts.
+
+Radix sort is a special sorting algorithm that works on lists of numbers. Usually works best on integers (numbers), and usually binary, but we can use base10. It never makes comparisons, but exploits the fact that information about the size of the number is encoded in the number of digits! More digits means a bigger number. 
+
+How does it work? We take a list of numbers:
+[1556, 4, 394, 3922, 39, 902, 7, 4398, 923, 29]
+
+We then have a bucket of 0-9, and we look at the first digit from the right side, and then group them together based on that into the buckets. 1556 goes into the 5th bucket, 4 goes into 3, etc. etc. Then we form them into a list again based ontheir bucket, and we repeat but look at the next digit to the left. We keep doing this until they no longer have more than 1 digit and they get put into the 0th bucket, and then sorted from there. 
