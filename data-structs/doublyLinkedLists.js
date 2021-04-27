@@ -109,7 +109,7 @@ class DoublyLinkedList {
     };
 
     this.length++;
-    return this;;
+    return this;
   }
 
   // GET - Access a node in a DLL by position
