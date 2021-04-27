@@ -35,3 +35,11 @@ Comparisons with Arrays:
 Lists: Don't have indexes, connected via nodes with a next pointer, ! Random acces is not allowed (we have to traverse all the way from the beginning to whatever place we want)
 
 Arrays: Indexed in order, insertion and deletion can be expensive (if we insert or delete, everything has to be reindexed), can quickly be accessed at a specific index. 
+
+Doubly Linked List:
+
+All we do is add a pointer to a previous and the next node. However, while this seems simple it leads to a few larger things. 
+
+Comparisons:
+
+Singly Linked Lists are only one direction, whereas doubly point prev and next
