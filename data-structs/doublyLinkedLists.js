@@ -19,7 +19,7 @@ class DoublyLinkedList {
     this.head = null;
     this.tail = null;
     this.length = 0;
-  };
+  }
 
   // PUSH - add a node to the end of the doubly linked list
   push(val) {
@@ -41,7 +41,7 @@ class DoublyLinkedList {
 
     this.length++;
     return this;
-  };
+  }
 
   // POP - remove something from the end
   pop() {
@@ -65,7 +65,7 @@ class DoublyLinkedList {
 
     this.length--;
     return popped;
-  };
+  }
 
   // SHIFT - removes from beginning
   shift() {
@@ -90,7 +90,7 @@ class DoublyLinkedList {
 
     this.length--;
     return oldHead;
-  };
+  }
 
   // UNSHIFT - adding a node to the beginning of the DLL
   unshift(val) {
@@ -110,7 +110,7 @@ class DoublyLinkedList {
 
     this.length++;
     return this;;
-  };
+  }
 
   // GET - Access a node in a DLL by position
   get(index) {
@@ -138,7 +138,7 @@ class DoublyLinkedList {
       };
       return current;
     };
-  };
+  }
 
   // SET - replace the value of a node 
   set(index, val) {
@@ -154,7 +154,7 @@ class DoublyLinkedList {
     };
 
     return false;
-  };
+  }
 
   // INSERT - Adding a node to the DLL @ a certain position
   insert(index, value) {
@@ -180,7 +180,7 @@ class DoublyLinkedList {
 
     this.length++;
     return true;
-  };
+  }
 
   // REMOVE - removing a node by a certain position
   remove(index) {
@@ -206,7 +206,7 @@ class DoublyLinkedList {
 
     this.length--;
     return removedNode;
-  };
+  }
 
 
 };

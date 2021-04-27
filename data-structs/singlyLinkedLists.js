@@ -13,7 +13,7 @@ class SinglyLinkedList {
     this.head = null;
     this.tail = null;
     this.length = 0;
-  };
+  }
 
   // PUSH - adds values at the end
   push(val) {
@@ -34,7 +34,7 @@ class SinglyLinkedList {
 
     this.length++;
     return this;
-  };
+  }
 
   // POP - removes last node
   pop() {
@@ -64,7 +64,7 @@ class SinglyLinkedList {
     };
 
     return current;
-  };
+  }
 
   // SHIFT - remove a new node from the beginning
   shift() {
@@ -84,7 +84,7 @@ class SinglyLinkedList {
     };
 
     return currentHead;
-  };
+  }
 
   // UNSHIFT - add a new node at the beginning
   unshift(val) {
@@ -105,7 +105,7 @@ class SinglyLinkedList {
 
     this.length++;
     return this;
-  };
+  }
 
   // GET - retrieve a node by its position
   get(index) {
@@ -123,7 +123,7 @@ class SinglyLinkedList {
     };
 
     return current;
-  };
+  }
 
   // SET - change the val of a node based on its position
   set(index, val) {
@@ -139,7 +139,7 @@ class SinglyLinkedList {
     };
 
     return false;
-  };
+  }
 
   // INSERT - add a node to the linked list at a specific position
   insert(index, val) {
@@ -163,7 +163,7 @@ class SinglyLinkedList {
 
     this.length++;
     return true;
-  };
+  }
 
   // REMOVE - remove a node @ a specific position
   remove(index) {
@@ -184,7 +184,7 @@ class SinglyLinkedList {
 
     this.length--;
     return removed
-  };
+  }
 
   // REVERSE - reversing the linked list in place
   reverse() {
@@ -210,7 +210,7 @@ class SinglyLinkedList {
     };
 
     return this;
-  };
+  }
   // PRINT - prints our list
   print() {
     let arr = [];
@@ -220,7 +220,7 @@ class SinglyLinkedList {
       current = current.next
     }
     console.log(arr);
-  };
+  }
 }
 
 const list = new SinglyLinkedList()

@@ -43,3 +43,4 @@ All we do is add a pointer to a previous and the next node. However, while this 
 Comparisons:
 
 Singly Linked Lists are only one direction, whereas doubly point prev and next
+DLL are almost identical to SLL except for additional pointer. 
