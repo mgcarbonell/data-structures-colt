@@ -220,7 +220,7 @@ class DoublyLinkedList {
       currentNode.next = prevNode;
       currentNode.prev = nextNode;
       prevNode = currentNode;
-      currentNode = nextnode;
+      currentNode = nextNode;
     }
 
     return this;
