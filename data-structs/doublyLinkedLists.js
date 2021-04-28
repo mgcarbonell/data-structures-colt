@@ -59,7 +59,7 @@ class DoublyLinkedList {
       this.head = null;
       this.tail = null;
     } else {
-      this.tail = poppedNode.prev;
+      this.tail = popped.prev;
       this.tail.next = null;
     }
 
@@ -106,7 +106,7 @@ class DoublyLinkedList {
       this.head.prev = newNode;
       newNode.next = this.head;
       this.head = newNode;
-    };
+    }
 
     this.length++;
     return this;
@@ -135,9 +135,9 @@ class DoublyLinkedList {
       while (count !== index) {
         current = current.prev;
         count--;
-      };
+      }
       return current;
-    };
+    }
   }
 
   // SET - replace the value of a node 
