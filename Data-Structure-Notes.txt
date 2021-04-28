@@ -50,3 +50,7 @@ What is a Stack?
 An abstract data structure that's a collection of data. Needs to abide by a LIFO principle (last in first out vs FIFO first in first out). The last elem added to the stack will be the first removed. 
 
 Where are stacks used? In managing function invocations, undo/redo, routing (the history object) is treated like a stack! Stacks can also be utilized in trees & graphs. 
+
+Queues are a sister data structure to stacks. You add in data and remove it. It's order however is different: it's FIFO - first in first out. 
+
+Where are queues used? Background tasks, uploading/downloading resources, printing/task processing
