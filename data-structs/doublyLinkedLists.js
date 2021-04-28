@@ -213,7 +213,7 @@ class DoublyLinkedList {
     this.head = this.tail;
     this.tail = currentNode;
     let nextNode = null;
-    let prevnode = null;
+    let prevNode = null;
 
     for (let i = 0; i < this.length; i++) {
       nextNode = currentNode.next;
