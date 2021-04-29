@@ -54,3 +54,50 @@ Where are stacks used? In managing function invocations, undo/redo, routing (the
 Queues are a sister data structure to stacks. You add in data and remove it. It's order however is different: it's FIFO - first in first out. 
 
 Where are queues used? Background tasks, uploading/downloading resources, printing/task processing
+
+TREES!
+
+Are the devil. It's a classic data structure and commonly used. 
+
+Objectives: Define a tree, compare and contrast trees & lists, explain differences between trees, binary trees, and binary search trees.
+
+What is a tree? A data struct that consists of nodes in a parent/child relationship. 
+
+Whereas lists are linear data structures, one thing and the next, Trees are NONLINEAR. They can branch, they can have more than 1 path. They can have many nodes linked to one node, etc.
+
+There are some rules to trees, a node can only point to a child. A child can't point to a parent, a sibling can't point to each other. Every node is moving away from the root node. There must also be ONE entry point. 
+
+Tree Terminology:
+ROOT - the top node in a tree
+CHILD - a node directly connected to antoher node when moving away from the Root.
+PARENT - Converse notion of a child.
+SIBLINGS - a group of nodes with the same parent.
+LEAF - a node with no children.
+EDGE - the connection between one node and another.
+
+Applications of trees? 
+The DOM! nodes, parents, etc.
+
+Networking Routing. Delivery schemes, topology, distance
+
+Abstract Syntax Trees. Describes the syntax of a programming language
+
+Artificial Intelligence - Minimax tree (breaking down logic of a tictactoe game) or a decision tree.
+
+Computer file tree structures
+
+JSON! 
+
+Kinds of Trees:
+
+Many variets of trees, BINARY TREES, B-TREES, BINARY SEARCH TREES, HEAPS, radix tree, multiway trees, decision trees, suffix trees, queap, treap, threaded binary tree, tango tree, self-balancing search tree. HASHES! 
+
+We'll be talking mainly about binary trees. The root of a Binary tree will only have 2 children. 
+
+In parent/child nodes the left will be smaller, the right will be larger.
+
+How do BSTS (Binary Search Trees) work?
+* Every parent node has AT MOST TWO children.
+* Every node to the LEFT of a parent node is ALWAYS LESS than the parent.
+* Every node to the RIGHT of a parent node is ALWAYS GREATER than the parent.
+
