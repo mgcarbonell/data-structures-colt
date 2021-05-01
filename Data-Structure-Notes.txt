@@ -110,3 +110,15 @@ DFS - PostOrder (work from bottom up)
 
 There are certain situations where you want to use one over another. But there are many ways to visit things in a tree.
 
+When to use BFS and DFS: BFS? DFS? Which is better?
+
+It depends! The engineer answer.
+
+Wide Tree:
+BFS utilizes a queue in an array, we would need to store a lot of data in memory, so the space complexity could grow really big on a wide tree. 
+
+Ex: 
+What about InOrder, PostOrder, PreOrder? Why use them? If we wanted to take a huge BST and use InOrder, we'd end up with a set of all of its nodes in order. This could be useful to grab them from a list. 
+
+PreOrder will go from root, left side, then right side. Could be useful if we wanted to clone, dup, or save a tree (flatten it). its given in an order where we could reconstruct the order. We immediately know the root because it comes at the beginning.
+
