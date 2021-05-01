@@ -17,7 +17,7 @@ class BinarySearchTree {
     this.root = null;
   }
   // INSERT - iterative
-  insert() {
+  insert(value) {
     // create a new node
     // Starting at the root:
     // check if root, if not, root = new node

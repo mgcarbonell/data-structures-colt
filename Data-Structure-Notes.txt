@@ -101,3 +101,12 @@ How do BSTS (Binary Search Trees) work?
 * Every node to the LEFT of a parent node is ALWAYS LESS than the parent.
 * Every node to the RIGHT of a parent node is ALWAYS GREATER than the parent.
 
+TREE TRAVERSAL:
+Various methods, like Depth First Search (DFS) which goes down or Breadth First Search which goes across (BFS)
+
+DFS - InOrder (work from top down)
+DFS - PreOrder
+DFS - PostOrder (work from bottom up)
+
+There are certain situations where you want to use one over another. But there are many ways to visit things in a tree.
+
