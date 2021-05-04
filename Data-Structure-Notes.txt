@@ -144,3 +144,19 @@ Example:
 2   7                <- left filled out first.
 
 Why do we care about heaps? Binary heaps are used to implement priority queues which are very commonly used data structures. We'll implement one! We also use them in graph traversal algorithms, pretty important stuff.
+
+HASH TABLES:
+
+We use them a lot, and they're widely used. Nearly every programming language has some sort of hash table data structures. This is because of their speed, hash tables are very commonly used. 
+
+Hash tables in the wild:
+- Python has Dictionaries
+- JS has Objects and Maps*
+- Java, Go, & Scala have Maps
+- Ruby has... HASHES
+* Objects have some restrictions, but are basically hash tables
+
+Hash tables: Introductory Examples - 
+
+If all hash tables disappeared, imagine we want to store some colors. We could always just use an array/list: ['#ff69b4', '#etc'] but it doesn't tell us much.
+Something like, pink -> #ff69b4, color -> #etc, etc. or colors["pink"] rather than colors[0]. However, a computer doesn't super know what to do with colors["pink"], so instead we need to make a key/value pair.
