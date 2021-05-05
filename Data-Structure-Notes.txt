@@ -160,3 +160,93 @@ Hash tables: Introductory Examples -
 
 If all hash tables disappeared, imagine we want to store some colors. We could always just use an array/list: ['#ff69b4', '#etc'] but it doesn't tell us much.
 Something like, pink -> #ff69b4, color -> #etc, etc. or colors["pink"] rather than colors[0]. However, a computer doesn't super know what to do with colors["pink"], so instead we need to make a key/value pair.
+
+GRAPHS:
+
+What are the objectives? Explain a graph, compare and contrast different types of graphs and their use cases in the real world. Implement a graph using an adjecency list. Traverse a graph using BFS and DFS! (Because graphs are trees),
+compare and contrast graph traversal algos!
+
+So what is a graph? it's a data struct consits of a finite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirect graph or a set of ordered pairs for a directed graph. 
+unordered pairs of vertices = undirect graph
+ordered pairs = direct path
+
+But what is a graph? A connection of nodes. Nodes with connections.
+    Valid:  Valid:
+      A       A   
+     / \     / \ 
+    B   E   B   E    
+    | / |   |   | 
+    C   F   C   F  
+     \ /     \ /
+      D       D
+They can also look really crazier than that one. But where do we use them?
+
+Real world applications: 
+Where are they used? 
+* social networks
+* location/mapping
+* routing algorithms
+* visual hierarchy
+* file system optimizations
+
+Social network connections and retrieving them, finding the shortest path in a map, showing the relationships betweetn items such as video games and then returning a suggestion ("People who enjoyed this game also enjoyed..."), so recommendations: You might also like..., People you might know..., Frequently bought together.... Those are usually all graphs. 
+
+Some Terminology:
+
+Vertex: a node
+
+Edge: connection between nodes
+
+Weighted/Unweighted: values assigned to distances between vertices
+
+Directed/Undirected: directions assigned to distances between vertices
+
+Examples and ways to represent graphs:
+
+                A
+         ____ /   \
+        F          B
+       /           |
+      E-------D--- C
+say we had a map that looked roughly like this. We could store the edges in an adjacency matrix that would look like...
+
+- A B C D E F
+A 0 1 0 0 0 1
+B 1 0 1 0 0 0
+C 0 1 0 1 0 0
+D 0 0 1 0 1 0
+E 0 0 0 1 0 1
+F 1 0 0 0 1 0
+1 = true
+0 = false
+
+This can also be an adjacency list stored as if...
+A = 0, B = 1, C = 2, D = 3, E = 4, F = 5
+i [
+0   [1, 5],
+1   [0, 2],
+2   [1, 3],
+3   [2, 4],
+4   [3, 5],
+5   [4, 0]
+  ]
+We can also hash table them ({}):
+{
+  A: ["B", "F"],
+  B: ["A", "C"],
+  C: ["B", "D"],
+  D: ["C", "E"],
+  E: ["D", "F"],
+  F: ["E", "A"]
+}
+
+What's the difference?
+Adjacency List:
++ Can take up less space (in sparse graphs)
++ Faster to iterate over all edges
+- Can be slower to look up specifid edge
+
+Adjacency Matrix:
+- Takes up more space (in sparse graphs)
+- Slower to iterate over all edges
++ Faster to look up specific edge
