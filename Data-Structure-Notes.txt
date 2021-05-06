@@ -251,6 +251,15 @@ Adjacency Matrix:
 - Slower to iterate over all edges
 + Faster to look up specific edge
 
-Graph traversal:
 
-We'll be doing DFS graph traversal. 
+DIJKSTRA'S ALGORITHM:
+
+Objectives: understand the importance of Dijkstra, implement a weighted graph, walk through the steps of Dijkstra's, implement Dijkstra's using a naive priority queue, implement Dijkstra's using a binary heap priority queue. 
+
+What is Dijkstra's? It's one of the most famous and widely used algorithms around. Really what it does is finds the shortest path between two vertices on a graph, so it solves the question: What's the fastest way to get from point A to point B? eg Dijkstra's Shortest Path Algorithm. 
+
+How it used?
+* GPS - finding fastest route.
+* Network Routing - finds open shortest path for data.
+* Biology - used to model the spread of viruses among humans.
+* Airline tickets - finding cheatest route to your destination.
