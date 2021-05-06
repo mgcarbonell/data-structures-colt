@@ -250,3 +250,7 @@ Adjacency Matrix:
 - Takes up more space (in sparse graphs)
 - Slower to iterate over all edges
 + Faster to look up specific edge
+
+Graph traversal:
+
+We'll be doing DFS graph traversal. 
