@@ -1,0 +1,26 @@
+For dynamic programming make sure you're okay with recursion. Might help a little bit.
+
+Objectives:
+* Define what dynamic programming is.
+* Explain what overlapping subproblems are.
+* Understand what optimal substructre is.
+* Solve more challenging problems using dynamic programming.
+
+What is dynamic programming?
+
+"A method for solving a complex problem by breaking it down into a collection of simpler subprolbems, solving each of those subproblems just once, and sorting their solutions."
+
+Where does the name come from? From the 40s by Richard Bellman, just means the process of solving problems where one needs to find the best decisions one after another. Bellman just wanted a cool sounding name. It really just has to do with optimization. 
+
+How do we know when we can use it? There's specific situations and specific problems. There are two things we should really look for:
+
+1. Optimal substructures.
+2. Overlapping subproblems.
+
+Let's check out #2 first. What are overlapping subproblems? A problem is said to have overlapping subproblems if it can be broken down into subproblems. So examples are like the Fibonacci sequence. "Every number after the first two is the sum of the two preceding ones." What's an example of something that doesn't work? Merge sort! Things don't overlap. It's easier to divide and conquer these. We want OVERLAPPING. (Though there is a special case with mergeSort say we have an array of repeating numbers [1, 2, 1, 2, 1, 2]). 
+
+Now that we covered overlapping subproblems, let's talk about OPTIMAL SUBSTRUCTURE. "A problem is said to have optimal substructure if an optimal solution can be constructed from optimal solutions of its subproblems." 
+
+What are some techniques? Memoization and Tabulation. Memoization is displayed in fibonacci.js.
+
+Tabulation: Tabulation is storing the result of a previous result in a "table" (usually an array). This is uslaly done using iteration, and has better space complexity. Let's checkout tabulation.js
